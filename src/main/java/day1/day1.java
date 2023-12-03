@@ -18,7 +18,7 @@ public class day1 {
     public static long wrapNumbers(String line) {
         line = changeStringNumbersToInt(line);
         line = line.replaceAll("[^0-9]", "");
-        long numbers = Integer.parseInt(line);
+        long numbers = Long.parseLong(line);
         numbers = numberFromLine(numbers);
         return numbers;
     }
